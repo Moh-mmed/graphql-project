@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./pages/home";
+import ProductPage from "./pages/product";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/:slug" element={<ProductPage />} />
         </Routes>
       </div>
     </Router>
